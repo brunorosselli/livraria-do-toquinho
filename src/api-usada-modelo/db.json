@@ -1,0 +1,53 @@
+{
+  "livros": [
+    {
+      "titulo": "O Hobbit",
+      "descricao": "Como a maioria dos hobbits, Bilbo Bolseiro leva uma vida tranquila até o dia em que recebe uma missão do mago Gandalf. Acompanhado por um grupo de anões, ele parte numa jornada até a Montanha Solitária para libertar o Reino de Erebor do dragão Smaug.",
+      "preco": "100",
+      "disponivel": true,
+      "id": 1
+    },
+    {
+      "titulo": "O Silmarillion",
+      "descricao": "O Silmarillion é uma coletânea de obras literárias de mito-poesias de J. R. R. Tolkien. Foi editada e publicada postumamente em 1977 por seu filho Christopher Tolkien com a ajuda de Guy Gavriel Kay, que, mais tarde, tornou-se um notável escritor de fantasia.",
+      "preco": "100",
+      "disponivel": true,
+      "id": 2
+    },
+    {
+      "titulo": "O Senhor dos Anéis: A Sociedade do Anel",
+      "descricao": "Em uma terra fantástica e única, um hobbit recebe de presente de seu tio um anel mágico e maligno que precisa ser destruído antes que caia nas mãos do mal. Para isso, o hobbit Frodo tem um caminho árduo pela frente, onde encontra perigo, medo e seres bizarros. Ao seu lado para o cumprimento desta jornada, ele aos poucos pode contar com outros hobbits, um elfo, um anão, dois humanos e um mago, totalizando nove seres que formam a Sociedade do Anel.",
+      "preco": "100",
+      "disponivel": true,
+      "id": 3
+    },
+    {
+      "titulo": "Memórias da Segunda Guerra Mundial",
+      "descricao": "Dividido em dois volumes, \"Memória da Segunda Guerra Mundial\" traz o relato do estadista. No primeiro volume, Churchill narra o período que antecedeu o conflito, os anos de resistência ao nazismo e as tentativas de alianças. ... O autor também escreve um epílogo sobre os possíveis desdobramentos do conflito.",
+      "preco": "100",
+      "disponivel": true,
+      "id": 4
+    },
+    {
+      "titulo": "O príncipe Maquiavel",
+      "descricao": "O Príncipe (em italiano, Il Principe) é um livro escrito por Nicolau Maquiavel em 1513, cuja primeira edição foi publicada postumamente, em 1532. ... Maquiavel deixa de lado o tema de A República que será mais bem discutido nos Discursos sobre a Primeira Década de Tito Lívio.",
+      "preco": "100",
+      "disponivel": true,
+      "id": 5
+    },
+    {
+      "titulo": "Mentes Perigosas ",
+      "descricao": "Mentes Perigosas: O Psicopata Mora ao Lado é um livro da psiquiatra e escritora Ana Beatriz Barbosa Silva, lançado em 2008. O livro trata da caracterização dos psicopatas e os danos que causam às demais pessoas. Foi o segundo livro mais vendido no Brasil na categoria não-ficção, conforme a Revista Veja.",
+      "preco": "50",
+      "disponivel": false,
+      "id": 7
+    },
+    {
+      "titulo": "Bruno o Aventureiro",
+      "descricao": "A História de um Aventureiro",
+      "preco": "150",
+      "disponivel": true,
+      "id": 8
+    }
+  ]
+}

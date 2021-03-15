@@ -1,0 +1,35 @@
+<div class="bg-secondary">
+  <app-formulario (eventEmit)="atualizaTabela($event)"></app-formulario>
+</div>
+
+<form  class="form-inline bg-dark w-100 p-3 d-flex justify-content-start">
+    <div class="form-group mx-sm-3 mb-2">
+      <label  style="margin-right: 10px;" class="text-light">Pesquisar:</label>
+      <input  type="text" class="form-control" name="filter" placeholder="Buscar" [(ngModel)]="filter">
+    </div>
+</form>
+
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th>#</th>
+        <th scope="col">ID</th>
+        <th scope="col">Titulo</th>
+        <th scope="col">Descricao</th>
+        <th scope="col">Valor</th>
+        <th scope="col">Disponibilidade</th>
+        <th>#</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let livro of livros  | filter:filter">
+        <td scope="col">#</td>
+        <td scope="col">{{livro.id}}</td>
+        <td scope="col">{{livro.titulo}}</td>
+        <td scope="col">{{livro.descricao}}</td>
+        <td scope="col">{{livro.preco | currency:'BRL':true}}</td>
+        <td scope="col" [ngClass]="{'text-success':livro.disponivel == true,'text-danger': livro.disponivel == false }">{{livro.disponivel}}</td>
+        <th>#</th>
+      </tr>
+    </tbody>
+  </table> 

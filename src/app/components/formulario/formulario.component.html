@@ -1,0 +1,35 @@
+<div class="d-flex justify-content-start"> 
+<div class="w-50 p-3 bg-secondary">
+    <form [formGroup]="novoitem" (ngSubmit)="cadastraLivro()">
+        <h3>Formulário De Novos Itens</h3>
+        <div class="form-row">
+        <div class="form-group col-md-6">
+            <label>Titulo:</label>
+            <input type="text" id="titulo" formControlName="titulo" class="form-control" placeholder="Titulo">                         
+        </div>
+        </div>
+        <div class="form-group">
+        <label>Descrição:</label>
+        <textarea type="text" id="descricao" formControlName="descricao" class="form-control" placeholder="Descrição"></textarea>
+        </div>
+        <div class="form-group">
+        <label>Valor:</label>
+        <input type="text" id="preco" formControlName="preco"class="form-control" placeholder="Valor">
+        </div>
+        <div class="form-check">
+        <td><input type="checkbox" id="disponivel" class="form-check-input" formControlName="disponivel"> <label class="form-check-label" checked>Produto Disponível</label></td>
+        </div>  
+        <div>
+        <label>Editar ID:</label>
+        <input type="text" formControlName="id" class="form-control" placeholder="Editar ID">
+        <button style="margin-top: 20px; margin-bottom: 10px"class="btn btn btn-primary" (click)="buscarLista()" type="button">Buscar Livro</button>
+        <button style="margin-top: 20px; margin-bottom: 10px; margin-left: 20px;"class="btn btn btn-primary" (click)="limpar()" type="button">Limpar</button>
+        </div>
+        <button type="submit" class="btn btn-success">Criar</button>
+        <button style="margin: 10px;" class="btn btn btn-primary" (click)="atualizarItem()" type="button">Atualizar</button>
+        <button style="margin: 10px;" class="btn btn-danger" (click)="excluirLivro()" type="button">Excluir</button>
+        <app-erro-msg></app-erro-msg>
+        <app-sucesso-msg></app-sucesso-msg>
+    </form>
+    </div>
+</div>
