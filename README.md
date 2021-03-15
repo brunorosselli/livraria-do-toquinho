@@ -6,7 +6,7 @@ O projeto visa exercitar o desenvolvimento de um CRUD.
 
 As tecnologias usadas foram: 
 
- - Angualar
+ - Angular
  - JavaScript
  - TypeScript
  - HTML
