@@ -7,6 +7,7 @@ As tecnologias usadas foram:
 
  - Angualar
  - Javascript
+ - TypeScript
  - HTML
  - CSS
  - Bootstrap
