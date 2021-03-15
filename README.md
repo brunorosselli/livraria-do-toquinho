@@ -19,7 +19,9 @@ Esse sistema foi desenvolvido por Bruno Eduardo Martins Rosselli.
 
 O modelo da API está dentro da pasta api-usada-modelo, o nome do arquivo é db.json.
 
-[VÍDEO DE DEMONSTRAÇÃO DO SISTEMA ](https://youtu.be/F3d9ASJYXZI)
+VÍDEO DE DEMONSTRAÇÃO DO SISTEMA:
+
+<iframe width="900" height="500" src="https://www.youtube.com/embed/F3d9ASJYXZI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 AMOSTRA DO SISTEMA:
 
