@@ -14,3 +14,5 @@ As tecnologias usadas foram:
 O Sistema deve consumir os dados de uma API rodando no Json-Server.
 
 Esse sistema foi desenvolvido por Bruno Eduardo Martins Rosselli.
+
+O modelo da API está dentro da pasta api-usada-modelo, o nome do arquivo é db.json.
