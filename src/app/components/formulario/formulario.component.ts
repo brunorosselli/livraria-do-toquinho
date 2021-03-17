@@ -77,24 +77,18 @@ export class FormularioComponent implements OnInit {
 
   // Método para Cadastrar Livro
   cadastraLivro(){
-    if (this.novoitem.value.titulo == null){
-        this.erroMsgComponent.setError('Por Favor, preencha os campos em vermelho!');
-    }
-    if (this.novoitem.value.descricao == null){
-        this.erroMsgComponent.setError('Por Favor, preencha os campos em vermelho');
-    }
-    if (this.novoitem.value.preco == null){
-        this.erroMsgComponent.setError('Por Favor, preencha os campos em vermelho!');
-    }
+    if (this.novoitem.value.titulo && this.novoitem.value.descricao && this.novoitem.value.preco != null){
+     this.livrosService.cadastrarLivro(this.novoitem.value)
+      .subscribe(livro => {
+        this.livro = new LivrosModel();
+        console.log(livro);
+        this.sucessoMsgComponent.setSuccess('Livro Cadastrado Com Sucesso!');
+        this.atualizaTabela(); },
+        () => { this.erroMsgComponent.setError('Falha Ao Cadastrar Livro!'); } 
+        );
+      }
     else {
-    this.livrosService.cadastrarLivro(this.novoitem.value)
-    .subscribe(livro => {
-      this.livro = new LivrosModel();
-      console.log(livro);
-      this.sucessoMsgComponent.setSuccess('Livro Cadastrado Com Sucesso!');
-      this.atualizaTabela(); },
-      () => { this.erroMsgComponent.setError('Falha Ao Cadastrar Livro!'); } 
-      );
+      this.erroMsgComponent.setError('Por Favor, preencha os campos em vermelho!');
     }
   }
   // Método para Excluir Livro
